@@ -1,11 +1,13 @@
 # Register
 
-Register measures prose instead of grading it.
+Register is a Chrome extension that measures a draft against a corpus you choose. You save writing you admire into a local library; nothing leaves the browser, and no text is uploaded anywhere.
 
-Save writing you admire into a local corpus — no account, no upload, nothing leaves the browser. Register scores every saved text and every draft across 27 metrics — Biber's six register dimensions, sentence rhythm as a distribution (mean, SD, skew, and whether short sentences follow long ones on purpose or wander at random), vocabulary diversity that holds up across text length, word concreteness and frequency, and grammar rates like nominalization and passive voice — then reports how far the draft sits from the corpus, in standard deviations.
+Every saved text and every new draft is scored on 27 metrics. Biber's six register dimensions (involved vs. informational, narrative vs. non-narrative, situated vs. explicit reference, neutral vs. persuasive, concrete vs. abstract, edited vs. on-line). Sentence rhythm as a distribution, so mean, standard deviation, skew, and autocorrelation, not just average length. Lexical diversity via MTLD and MATTR, which stay stable as texts get longer, where TTR does not. Word concreteness and frequency norms. Grammatical markers: nominalization rate, passive rate, modal rate.
 
-Not "this sounds off." *"This draft is 2.8 SD more abstract than your corpus, and its sentence lengths don't vary the way the rest of it does."* That's specific enough to check, disagree with, and fix in one pass.
+Most feedback on prose stops at "sounds off." Register returns something you can act on: this draft is 3 SD more abstract than your corpus and uses half as many short sentences. That is a testable claim, and the edit either closes the gap or it doesn't.
 
+The corpus can be other writers you want to sound like, or your own back-catalogue when the goal is staying consistent with yourself.
+Cohesion metrics are deliberately absent. Connective density and lexical overlap are cheap to compute and show little relationship to judged writing quality, so they were left out rather than shipped as filler.
 ---
 
 ## Who this is for
