@@ -107,12 +107,3 @@ k-means over all 27 standardised metrics, with k chosen by silhouette. If the si
 
 ---
 
-## Emulating a style
-
-Your writing rules currently assert a mean sentence length of 16–18 words and an SD of 6–8. Those numbers are invented. Save two hundred pages you actually admire and every threshold becomes a percentile against writers you demonstrably like — and you find out whether you have one taste or three.
-
-The workflow is: build a corpus of the writing you're chasing — someone else's, or your own best back-catalogue if the goal is staying consistent with yourself — write the draft, then look at where it lands on the same 27 metrics, in standard deviations from that corpus.
-
-A z-score is not a verdict, it's a coordinate. A draft that comes back +3 SD on `pctShort` and −2 SD on `pctAbstract` against the corpus gives two testable edits: cut short sentences, reach for more abstract nominal phrasing. That's a sharper note than "this doesn't sound like them." And because register, rhythm, vocabulary, concreteness, and grammar move mostly independently, a draft can nail sentence rhythm and still read wrong on nominalisation rate — style-by-ear collapses those into one vague impression, style-by-dimension tells you which one is off.
-
-It also catches you chasing something incoherent. Dump two hundred pages into the corpus and if the k-means step (see Taste, above) refuses to split above a silhouette of 0.25, that's the tool telling you the source material doesn't cluster: there isn't one style in there to imitate, there are several, and matching your draft to the pooled average of all of them will read like none of them.
