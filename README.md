@@ -1,21 +1,28 @@
-# Register
+## Register
 
-Register is a Chrome extension that measures a draft against a corpus you choose. You save writing you admire into a local library; nothing leaves the browser, and no text is uploaded anywhere.
+Register is a Chrome extension that compares a draft with writing you choose.
 
-Every saved text and every new draft is scored on 27 metrics. Biber's six register dimensions (involved vs. informational, narrative vs. non-narrative, situated vs. explicit reference, neutral vs. persuasive, concrete vs. abstract, edited vs. on-line). Sentence rhythm as a distribution, so mean, standard deviation, skew, and autocorrelation, not just average length. Lexical diversity via MTLD and MATTR, which stay stable as texts get longer, where TTR does not. Word concreteness and frequency norms. Grammatical markers: nominalization rate, passive rate, modal rate.
+Save articles, essays, or your own past work into a local library. Register keeps every text inside your browser. When you paste in a new draft, it measures both the draft and the library across 27 metrics.
 
-Most feedback on prose stops at "sounds off." Register returns something you can act on: this draft is 3 SD more abstract than your corpus and uses half as many short sentences. That is a testable claim, and the edit either closes the gap or it doesn't. The corpus can be other writers you want to sound like, or your own back-catalogue when the goal is staying consistent with yourself.
-Cohesion metrics are deliberately absent. Connective density and lexical overlap are cheap to compute and show little relationship to judged writing quality, so they were left out rather than shipped as filler.
+These include sentence-length patterns, vocabulary range, concrete word use, passive voice, nominalizations, modal verbs, and Biber’s six register dimensions.
 
----
+The result looks like this:
 
-## Who this is for
+> This draft uses half as many short sentences as your usual writing and scores three standard deviations higher on abstraction.
 
-Two situations create the same problem: you need a draft to match a register you didn't invent, and right now the only tool you have is reading it out loud and hoping.
+That gives you a specific edit to make. Add shorter sentences. Replace abstract nouns with concrete actions. Run the draft again and see whether the score moves closer to your corpus.
 
-**Writing with an LLM in the loop, shipping the result somewhere it has to read as yours.** Model output has a signature — sentence length that barely varies, vocabulary that plateaus early, a lean toward abstraction and nominalization over concrete, active phrasing. None of that trips a spell-checker. Register's rhythm autocorrelation and MTLD/MATTR metrics were built to catch exactly this kind of flatness, regardless of what produced the draft — compare against a corpus of writing (including your own, from before) that doesn't have that signature.
+Your corpus can contain writers whose style you admire or your own older work when you want the draft to sound like you.
 
-**Matching someone else's register on purpose.** Ghostwriters, agency copywriters, anyone doing a client-voice pass. "Does this sound like them" currently has no better answer than a gut check and a hope the client agrees. A corpus built from the target's own writing turns that into a number.
+## Who it is for
+
+Register helps when a draft needs to match an existing voice.
+
+Writers using LLMs can compare generated text with their own past work and catch flat sentence rhythm, repetitive vocabulary, and abstract phrasing.
+
+Ghostwriters and agency copywriters can build a corpus from a client’s published work and measure how closely each draft matches it.
+
+Instead of asking, “Does this sound right?”, Register shows exactly where the draft differs.
 
 ---
 
